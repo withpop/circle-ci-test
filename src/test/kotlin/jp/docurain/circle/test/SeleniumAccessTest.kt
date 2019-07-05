@@ -14,7 +14,7 @@ class SeleniumAccessTest {
     private val driver: ChromeDriver
     private val options: ChromeOptions
     init {
-        System.setProperty("webdriver.chrome.driver", "chromeDriverPath")
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver")
         options = ChromeOptions()
         options.setBinary("/usr/bin/google-chrome")
         options.addArguments("--headless")
